@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeny Currency counter & cash calculator</title>
+    <!-- link  css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+</head>
+<body class="all-body container">
+<!-- header -->
+    <header>
+           <h1 class="text-center text-info mt-5 mb-5">Moeny Currency counter & cash calculator</h1>
+    </header>
+<!-- main  -->
+    <main>
+        <section class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <img class="w-100" src="https://t1.pixers.pics/img-1fb6f67c/wall-murals-cartoon-finance-money-icon-set.jpg?H4sIAAAAAAAAA3WOW2rEMAxFt-NAEimJn1nA_M4SgvFjmk4exnY7pauvQulnEULShatz4eMoNgZw4aghw756vwWI60ZXmXMo63dg2CrkzUzqxhCxmc_PkF0-E-s0bzutW2Uk9djML0vG3eYne6s1lRmgTH1av-gbDVfA7QVGHBSgBGEEt3yM2nmjlmpTqLZ7vqzPtvbpeLR4VfMXgyO2_MLXvO6M8pxEquw9PRr4h_a7A7ngdodJgkFAA1pe0nK7T9IgGi0XjFEMQ6AkFEk5j0KZaDz3UQgMTvdE-QFReB4ILAEAAA==" alt="">
+            </div>
+ <!-- income  -->
+            <div class="col ps-5">
+                <h2 class="text-info text-center">Income</h2>
+                <!-- type of error income < expence -->
+                <!-- type of error string -->
+                <!-- type of error nagative value -->
+                <h3 id="error" class="text-danger error">You entered incorrect input Please check the input and re-enter</h3>
+                <div class="d-flex">
+                     <h3 class="text-info text-center">Income:</h3>
+                     <input id="incoming-balance" class="form-control bg-light ms-4" type="text">
+                </div>
+<!-- Expence -->
+                <h2 class="text-center text-info">Expenses</h2>
+                <div class="d-flex">
+                    <h3 class="text-info text-center">Food:</h3>
+                    <input id="food-balance" class="form-control bg-light ms-5" type="text">
+               </div>
+                <div class="d-flex mt-5">
+                    <h3 class="text-info text-center">Rent:</h3>
+                    <input id="rent-balance" class="form-control bg-light ms-5" type="text">
+               </div>
+                <div class="d-flex mt-5">
+                    <h3 class="text-info text-center">Clothes:</h3>
+                    <input id="clothes-balance" class="form-control bg-light ms-3" type="text">
+               </div>
+             <p class="text-center">  <button id="calculate-button" class="btn btn-info mt-5">Calculate</button></p>
+
+             <h1 class="text-info text-center mb-3">Total Expenses: <span id="total-expence"></span></h1>
+             <h1 class="text-info text-center">Balance:<span id="new-balance"></span></h1>
+<!-- saving  -->
+               <span id="errorText"></span>
+             <div class="d-flex">
+                 <h3 class="text-info me-3">Save:</h3>
+                 <input id="saving-input" class="form-control w-25 bg-light" type="text">
+
+                 <h3 class="ms-2 me-2">%</h3>
+                 <button onclick="savingsMoney()" class="btn btn-info w-25">Save</button>
+             </div>
+             <h3 class="text-info mt-5">Saving Amount:<span id="saving-amount"></span></h3>
+             <h3 class="text-info mt-2">Remaining Amount:<span id="remain"></span></h3>
+            </div>
+       </section>
+    </main>
+<!-- link bootstrap script  -->
+     <script src="js/app.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
